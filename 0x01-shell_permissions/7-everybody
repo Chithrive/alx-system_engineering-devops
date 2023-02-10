@@ -1,3 +1,2 @@
 #!/bin/bash
 ls -la chmod 751 hello
-ls -la chmod 555 hello
