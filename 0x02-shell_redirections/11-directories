@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -mindepth 1 -type d -printf '%h\n' | sort | uniq -c | awk '{print $1-1, "directories and sub-directories"}'
+shopt -s globstar;echo $(($(find . -type d -not -path './.' -not -path './..' | wc -l)-1))
